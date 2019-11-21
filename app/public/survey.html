@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            background-color: rgb(105, 105, 172);
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .padding {
+            padding: 0px 20px 0px 20px;
+        }
+
+        #submit {
+            margin: 30px 0px 30px 0px;
+            width: 30%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hey Hey Hey, It's time for a survey</h2>
+
+        <hr>
+        <div class="row">
+            <div class="col-xs-4">
+                <h4>So tell me...</h4>
+                <h5>Name</h5>
+                <input type="text" id="name" class="form-control" required>
+                <h5>Link to Your Photo</h5>
+                <input type="text" id="photo" class="form-control" required>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="padding">
+                <h3>Question 1</h3>
+                <h4>Han Solo is the best character in the entire Star Wars film catalog.</h4>
+                <select id="q1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 2</h3>
+                <h4>Tacos are the superior medium to consume ground beef.</h4>
+                <select id="q2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 3</h3>
+                <h4>Cats are better than dogs, for practical reasons.</h4>
+                <select id="q3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 4</h3>
+                <h4>The slow, painful death of the electric guitar is a large part of the slow, painful death of popular
+                    music.</h4>
+                <select id="q4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 5</h3>
+                <h4>Antifa is not a terrorist organization.</h4>
+                <select id="q5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 6</h3>
+                <h4>Pokemon is a game best suited for children.</h4>
+                <select id="q6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 7</h3>
+                <h4>"OK Boomer" is not hate speech.</h4>
+                <select id="q7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 8</h3>
+                <h4>Strawberry Jelly for my pb and j's. Grape Jelly for my garbage can.</h4>
+                <select id="q8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 9</h3>
+                <h4>Rick Sanchez of "Rick and Morty" is only entertaining because of his toxic character traits.</h4>
+                <select id="q9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3>Question 10</h3>
+                <h4>Horoscopes are about as real as professional wrestling.</h4>
+                <select id="q10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i
+                        class="fa fa-paper-plane"></i>
+                    Submit</button>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Here we grab the form elements
+            var newPerson = {
+                name: $("#name").val().trim(),
+                picLink: $("#photo").val().trim(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+
+            console.log(newPerson);
+
+            $.post("/api/friends", newPerson,
+      function(data) {
+
+        // If a table is available... tell user they are booked.
+        if (data) {
+          alert("Hey! Thanks for filling that out! You're alright.");
+        }
+
+        // Clear the form when submitting
+        $("#name").val("");
+        $("#photo").val("");
+        $("#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").val("");
+
+      });
+
+
+        });
+    </script>
+</body>
+
+</html>
