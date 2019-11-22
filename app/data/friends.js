@@ -1,7 +1,7 @@
 var people = [
     {
       name: "Justin",
-      piclink: "https://pierrelampre.github.io/Responsive-Portfolio/assets/img/me_simba.jpg",
+      picLink: "https://pierrelampre.github.io/Responsive-Portfolio/assets/img/me_simba.jpg",
       scores: [
           5,
           5,

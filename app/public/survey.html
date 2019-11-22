@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <style>
         body {
             background-color: rgb(105, 105, 172);
@@ -35,7 +35,7 @@
             margin: 30px 0px 30px 0px;
             width: 30%;
         }
-    </style>
+    </Style>
 
 
 </head>
@@ -125,7 +125,7 @@
                 </select>
 
                 <h3>Question 7</h3>
-                <h4>"OK Boomer" is not hate speech.</h4>
+                <h4>"OK Boomer" is hate speech.</h4>
                 <select id="q7">
                     <option value=""></option>
                     <option value="1">1 (Strongly Disagree)</option>
@@ -173,6 +173,23 @@
                     Submit</button>
 
                 <hr>
+                <div id="bestFriendModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h3 class="modal-title">We have a match!</h1>
+                            </div>
+                            <div class="modal-body">
+                                <h2 id="bestFriend"></h2>
+                                <img id="bestFriendPhoto" src="">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -203,19 +220,22 @@
             console.log(newPerson);
 
             $.post("/api/friends", newPerson,
-      function(data) {
+                function (data) {
 
-        // If a table is available... tell user they are booked.
-        if (data) {
-          alert("Hey! Thanks for filling that out! You're alright.");
-        }
+                    if (data) {
+                        alert("Hey! Thanks for filling that out! You're alright.");
+                        $("#bestFriend").text(data.name);
+                        $("#bestFriendPhoto").attr("src", data.picLink);
+                        $("#bestFriendModal").modal("toggle");
+                        console.log(data.picLink);
+                    }
 
-        // Clear the form when submitting
-        $("#name").val("");
-        $("#photo").val("");
-        $("#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").val("");
+                    // Clear 
+                    $("#name").val("");
+                    $("#photo").val("");
+                    $("#q1,#q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10").val("");
 
-      });
+                });
 
 
         });
