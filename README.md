@@ -1,4 +1,4 @@
-**bold**FriendFinder - A Full Stack Application**bold**
+**FriendFinder - A Full Stack Application**
 
 ---
 
@@ -10,8 +10,8 @@ This app uses the following technologies:
 * Bootstrap
 * Javascript/jQuery
 * node.js
-  --* express
-  --* path
+  * express
+  * path
 
 Deployed to Git and Heroku.
 
