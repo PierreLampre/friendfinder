@@ -26,7 +26,7 @@ Here are some pictures!
 
 Here are some links!
 
-Deployed App: [https://tranquil-crag-07844.herokuapp.com/]
+[Deployed App](https://tranquil-crag-07844.herokuapp.com/)
 
-My Portfolio: [https://pierrelampre.github.io/Responsive-Portfolio/]
+[My Portfolio](https://pierrelampre.github.io/Responsive-Portfolio/)
 
