@@ -13,7 +13,7 @@ This app uses the following technologies:
   * express
   * path
 
-Deployed to Git and Heroku.
+Deployed to Heroku.
 
 Here are some pictures!
 
